@@ -57,28 +57,28 @@ VALUES
 -- © Copyright 2025 Break Into Tech  --
 30
 ​
-#For this project, I used SQL to query the Superstore database to get information about items sold at the store and their prices.
+# For this project, I used SQL to query the Superstore database to get information about items sold at the store and their prices.
 
-#For this first query, I ordered the items by price.
+# For this first query, I ordered the items by price.
 
 SELECT item_name, price
 FROM superstore
 ORDER BY price DESC;
 
-#For the second query, I found the total of the revenue.
+# For the second query, I found the total of the revenue.
 SELECT SUM(price)
 FROM superstore;
 
-#For the third, I did a basic query to get a visual of my entire table.
+# For the third, I did a basic query to get a visual of my entire table.
 SELECT *
 FROM superstore;
 
-#For this fourth query, I found what the highest priced item was in the category of Kitchen Supplies.
+# For this fourth query, I found what the highest priced item was in the category of Kitchen Supplies.
 SELECT category, MAX(price), item_name
 FROM superstore
 WHERE category = 'Kitchen Supplies';
 
-#For this final query, I located the average rating for the superstore's Wireless Earbuds.
+# For this final query, I located the average rating for the superstore's Wireless Earbuds.
 SELECT item_name, average_rating
 FROM superstore
 WHERE item_name LIKE 'Wireless Earbuds';
